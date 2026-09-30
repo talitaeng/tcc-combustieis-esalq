@@ -16,7 +16,20 @@ A solução combina um motor de engenharia e modelagem econométrica em **Python
 🔗**[<font color='F2C94C'>Acessar Painel Interativo PBI Web</font>](https://app.powerbi.com/view?r=eyJrIjoiM2VhNmYyMjQtODJkNy00ZDYyLTg0NzktNDViZDUxMmRiNWQ0IiwidCI6IjdhNTkyOTcwLWJlNzktNGFjNS05YTI0LWY2ODNiMGI2NWZjYiJ9)**
 
 ---
+## 📊 Fonte de Dados
 
+Devido ao limite de tamanho do GitHub para ficheiros extensos, os dados brutos (`data/raw`) não estão incluídos diretamente neste repositório <br>
+Os dados utilizados neste projeto foram obtidos a partir do portal de **Dados Abertos da ANP**
+
+- **Série Histórica de Preços de Combustíveis:** [Série Histórica ANP](https://www.gov.br/anp/pt-br/centrais-de-conteudo/dados-abertos/serie-historica-de-precos-de-combustiveis)
+- **Preço do Petróleo Brent - IPEA:** [Dados de Cotação do Brent](https://www.ipeadata.gov.br/Default.aspx)
+
+### Como reproduzir:
+1 - Faça o download dos arquivos dos anos de interesse (2023 a 2025) no site da ANP.<br>
+2 - Salve os ficheiros .csv originais na pasta `data/raw`.<br>
+3 - No site do IPEA, na barra de pesquisa procure por "Preço - petróleo bruto - Brent (FOB)" e faça o download do arquivo extensão .csv.<br>
+4 - Execute o script de Processamento  `scripts/01_Processamento.py` para gerar as bases em  `data/processed`.
+  
 ## Arquitetura da Solução
 
 ```mermaid
